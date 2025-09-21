@@ -10,7 +10,10 @@ loadstring(game:HttpGet('https://pastebin.com/raw/nVHKhjf2'))()
 
 if it doesnt work propelly use a good executor and also, it didnt work good for me after some testings so if theres a bug dm me on discord. user: mafiaioso
 
-also use this for rtx like effect (didnt use it on the showcase)
+also use this for rtx like effect
+showcase:
+https://streamable.com/k2cn6x
+script:
 
 local find1 = game.Lighting:FindFirstChildWhichIsA("BloomEffect") if find1 then
     game.Lighting:FindFirstChildWhichIsA("BloomEffect"):Destroy()
