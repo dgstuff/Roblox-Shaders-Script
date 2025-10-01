@@ -1,0 +1,19 @@
+--Created by (DGPS)[https://dgps.dev]
+for _, class in pairs({"BloomEffect", "SunRaysEffect", "ColorCorrectionEffect", "BlurEffect", "Sky"}) do
+    local effect = game.Lighting:FindFirstChildWhichIsA(class)
+    if effect then effect:Destroy() end
+end
+
+local color = Instance.new("ColorCorrectionEffect", game.Lighting)
+color.Contrast = 0.1
+color.Saturation = 0
+color.TintColor = Color3.fromRGB(255, 255, 255)
+game.Lighting.ExposureCompensation = 0
+game.Lighting.ShadowSoftness = 0.5
+game.Lighting.EnvironmentDiffuseScale = 0.2
+game.Lighting.EnvironmentSpecularScale = 0.2
+game.Lighting.Brightness = 1.5
+game.Lighting.ColorShift_Top = Color3.fromRGB(100, 100, 100)
+game.Lighting.OutdoorAmbient = Color3.fromRGB(120, 120, 120)
+game.Lighting.GeographicLatitude = 90
+game.Lighting.Ambient = Color3.fromRGB(110, 110, 110)
